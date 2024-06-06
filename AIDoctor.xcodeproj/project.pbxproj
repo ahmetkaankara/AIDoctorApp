@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33373A3A2BFBDAA7009C60A6 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33373A392BFBDAA7009C60A6 /* ViewExtensions.swift */; };
+		33373A3C2BFBDACA009C60A6 /* ShapeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33373A3B2BFBDACA009C60A6 /* ShapeExtensions.swift */; };
+		33373A3E2BFBDB2D009C60A6 /* OpenAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33373A3D2BFBDB2D009C60A6 /* OpenAIModels.swift */; };
+		33373A412BFBDDCC009C60A6 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33373A402BFBDDCC009C60A6 /* OpenAIService.swift */; };
+		33373A442BFBDDF1009C60A6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 33373A432BFBDDF1009C60A6 /* Alamofire */; };
+		33373A462BFBDDF1009C60A6 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 33373A452BFBDDF1009C60A6 /* AlamofireDynamic */; };
+		33373A482BFBDF5D009C60A6 /* TypingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33373A472BFBDF5D009C60A6 /* TypingIndicatorView.swift */; };
+		333AB8E42BFBD8F200270B5B /* AIDoctorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AB8E32BFBD8F200270B5B /* AIDoctorApp.swift */; };
+		333AB8E62BFBD8F200270B5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AB8E52BFBD8F200270B5B /* ContentView.swift */; };
+		333AB8E82BFBD8F400270B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333AB8E72BFBD8F400270B5B /* Assets.xcassets */; };
+		333AB8EB2BFBD8F400270B5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333AB8EA2BFBD8F400270B5B /* Preview Assets.xcassets */; };
+		333AB8F52BFBD90F00270B5B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AB8F42BFBD90E00270B5B /* ChatView.swift */; };
+		333AB8F72BFBD91600270B5B /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AB8F62BFBD91600270B5B /* ChatViewModel.swift */; };
+		333AB8FB2BFBD96800270B5B /* ChatCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AB8FA2BFBD96800270B5B /* ChatCellView.swift */; };
+		333AB8FD2BFBD98300270B5B /* MainButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AB8FC2BFBD98300270B5B /* MainButtonView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33373A392BFBDAA7009C60A6 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		33373A3B2BFBDACA009C60A6 /* ShapeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeExtensions.swift; sourceTree = "<group>"; };
+		33373A3D2BFBDB2D009C60A6 /* OpenAIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIModels.swift; sourceTree = "<group>"; };
+		33373A402BFBDDCC009C60A6 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		33373A472BFBDF5D009C60A6 /* TypingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingIndicatorView.swift; sourceTree = "<group>"; };
+		333AB8E02BFBD8F200270B5B /* AIDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		333AB8E32BFBD8F200270B5B /* AIDoctorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDoctorApp.swift; sourceTree = "<group>"; };
+		333AB8E52BFBD8F200270B5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		333AB8E72BFBD8F400270B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		333AB8EA2BFBD8F400270B5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		333AB8F42BFBD90E00270B5B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		333AB8F62BFBD91600270B5B /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		333AB8FA2BFBD96800270B5B /* ChatCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellView.swift; sourceTree = "<group>"; };
+		333AB8FC2BFBD98300270B5B /* MainButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		333AB8DD2BFBD8F200270B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33373A442BFBDDF1009C60A6 /* Alamofire in Frameworks */,
+				33373A462BFBDDF1009C60A6 /* AlamofireDynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33373A372BFBDA96009C60A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				33373A382BFBDA9D009C60A6 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		33373A382BFBDA9D009C60A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33373A392BFBDAA7009C60A6 /* ViewExtensions.swift */,
+				33373A3B2BFBDACA009C60A6 /* ShapeExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		33373A3F2BFBDCA8009C60A6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33373A402BFBDDCC009C60A6 /* OpenAIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		333AB8D72BFBD8F200270B5B = {
+			isa = PBXGroup;
+			children = (
+				333AB8E22BFBD8F200270B5B /* AIDoctor */,
+				333AB8E12BFBD8F200270B5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		333AB8E12BFBD8F200270B5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				333AB8E02BFBD8F200270B5B /* AIDoctor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		333AB8E22BFBD8F200270B5B /* AIDoctor */ = {
+			isa = PBXGroup;
+			children = (
+				33373A3F2BFBDCA8009C60A6 /* Services */,
+				33373A372BFBDA96009C60A6 /* Helpers */,
+				333AB8F92BFBD93600270B5B /* SubViews */,
+				333AB8F82BFBD93000270B5B /* Models */,
+				333AB8F32BFBD90400270B5B /* ViewModels */,
+				333AB8F12BFBD8F800270B5B /* Views */,
+				333AB8F22BFBD8FE00270B5B /* Others */,
+				333AB8E72BFBD8F400270B5B /* Assets.xcassets */,
+				333AB8E92BFBD8F400270B5B /* Preview Content */,
+			);
+			path = AIDoctor;
+			sourceTree = "<group>";
+		};
+		333AB8E92BFBD8F400270B5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				333AB8EA2BFBD8F400270B5B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		333AB8F12BFBD8F800270B5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				333AB8F42BFBD90E00270B5B /* ChatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		333AB8F22BFBD8FE00270B5B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				333AB8E52BFBD8F200270B5B /* ContentView.swift */,
+				333AB8E32BFBD8F200270B5B /* AIDoctorApp.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		333AB8F32BFBD90400270B5B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				333AB8F62BFBD91600270B5B /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		333AB8F82BFBD93000270B5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33373A3D2BFBDB2D009C60A6 /* OpenAIModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		333AB8F92BFBD93600270B5B /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				333AB8FA2BFBD96800270B5B /* ChatCellView.swift */,
+				333AB8FC2BFBD98300270B5B /* MainButtonView.swift */,
+				33373A472BFBDF5D009C60A6 /* TypingIndicatorView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		333AB8DF2BFBD8F200270B5B /* AIDoctor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333AB8EE2BFBD8F400270B5B /* Build configuration list for PBXNativeTarget "AIDoctor" */;
+			buildPhases = (
+				333AB8DC2BFBD8F200270B5B /* Sources */,
+				333AB8DD2BFBD8F200270B5B /* Frameworks */,
+				333AB8DE2BFBD8F200270B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIDoctor;
+			packageProductDependencies = (
+				33373A432BFBDDF1009C60A6 /* Alamofire */,
+				33373A452BFBDDF1009C60A6 /* AlamofireDynamic */,
+			);
+			productName = AIDoctor;
+			productReference = 333AB8E02BFBD8F200270B5B /* AIDoctor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		333AB8D82BFBD8F200270B5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					333AB8DF2BFBD8F200270B5B = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 333AB8DB2BFBD8F200270B5B /* Build configuration list for PBXProject "AIDoctor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 333AB8D72BFBD8F200270B5B;
+			packageReferences = (
+				33373A422BFBDDF1009C60A6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 333AB8E12BFBD8F200270B5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				333AB8DF2BFBD8F200270B5B /* AIDoctor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		333AB8DE2BFBD8F200270B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333AB8EB2BFBD8F400270B5B /* Preview Assets.xcassets in Resources */,
+				333AB8E82BFBD8F400270B5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		333AB8DC2BFBD8F200270B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333AB8E62BFBD8F200270B5B /* ContentView.swift in Sources */,
+				33373A3C2BFBDACA009C60A6 /* ShapeExtensions.swift in Sources */,
+				33373A3A2BFBDAA7009C60A6 /* ViewExtensions.swift in Sources */,
+				333AB8F52BFBD90F00270B5B /* ChatView.swift in Sources */,
+				333AB8F72BFBD91600270B5B /* ChatViewModel.swift in Sources */,
+				333AB8FD2BFBD98300270B5B /* MainButtonView.swift in Sources */,
+				333AB8FB2BFBD96800270B5B /* ChatCellView.swift in Sources */,
+				33373A412BFBDDCC009C60A6 /* OpenAIService.swift in Sources */,
+				33373A482BFBDF5D009C60A6 /* TypingIndicatorView.swift in Sources */,
+				333AB8E42BFBD8F200270B5B /* AIDoctorApp.swift in Sources */,
+				33373A3E2BFBDB2D009C60A6 /* OpenAIModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		333AB8EC2BFBD8F400270B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		333AB8ED2BFBD8F400270B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		333AB8EF2BFBD8F400270B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIDoctor/Preview Content\"";
+				DEVELOPMENT_TEAM = AK8MCSJQ7W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akaankara.AIDoctor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		333AB8F02BFBD8F400270B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIDoctor/Preview Content\"";
+				DEVELOPMENT_TEAM = AK8MCSJQ7W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akaankara.AIDoctor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		333AB8DB2BFBD8F200270B5B /* Build configuration list for PBXProject "AIDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333AB8EC2BFBD8F400270B5B /* Debug */,
+				333AB8ED2BFBD8F400270B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333AB8EE2BFBD8F400270B5B /* Build configuration list for PBXNativeTarget "AIDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333AB8EF2BFBD8F400270B5B /* Debug */,
+				333AB8F02BFBD8F400270B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33373A422BFBDDF1009C60A6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33373A432BFBDDF1009C60A6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33373A422BFBDDF1009C60A6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		33373A452BFBDDF1009C60A6 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33373A422BFBDDF1009C60A6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 333AB8D82BFBD8F200270B5B /* Project object */;
+}
